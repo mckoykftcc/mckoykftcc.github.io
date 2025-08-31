@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Form</title>
+    <style>
+        form {
+            background-color: #f0f8ff;
+            padding: 20px;
+            width: 300px;
+        }
+        textarea {
+            background-color: #ffe4e1;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+     <nav>
+        <a href="index.html">Home</a> &nbsp;
+        <a href="Strawhat Crew.html">Straw Hat Crew</a> &nbsp;
+        <a href="Formpage.html">Form</a> &nbsp;
+        
+    </nav>
+
+    <h1>Fill Out This Form</h1>
+
+    <form action="#" method="post">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="topic">Favorite Crew Mate:</label><br>
+        <select id="topic" name="topic">
+            <option value="Luffy">Luffy</option>
+            <option value="Zoro">Zoro</option>
+            <option value="Sanji">Sanji</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Favorite Role:</legend>
+            <input type="radio" id="Cook" name="Role" value="Cook">
+            <label for="Cook">Cook</label><br>
+            <input type="radio" id="Sniper" name="Role" value="Sniper">
+            <label for="Sniper">Sniper</label><br>
+            <input type="radio" id="Doctor" name="Role" value="Doctor">
+            <label for="Doctor">Doctor</label>
+        </fieldset><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
